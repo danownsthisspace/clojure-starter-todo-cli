@@ -53,7 +53,7 @@
   (println (apply str (repeat 40 "=")) "\n"))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Run the application"
   [& args]
   (println "Available commands:")
   (print-commands commands)
