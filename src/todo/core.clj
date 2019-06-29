@@ -1,6 +1,8 @@
 (ns todo.core
   (:require [clojure.string :as str]
-            ; Import the term color package which colours text in the terminal
+            ; Packages need to nbe added to the project.clj file before
+            ; they can be added here.
+            ; Import the term color package which colours text in the terminal.
             ; reference it as clr
             [clojure.term.colors :as clr])
   (:gen-class))
@@ -65,9 +67,9 @@
                            (keyword))
           command-fn (get-in commands [command-name :fn])
           args (str/join " " (rest input))]
-      (println "")
       (if (= command-name :quit)
         (println "bye")
+        ; else
         (do
           (when command-fn (command-fn args))
           (recur))))))

@@ -6,7 +6,7 @@ to explore the clojure language.
 
 ## Installation
 
-Clone the Repo and cd into the dir
+Clone the Repo and cd into the clojure-starter-todo-cli directory
 
     lein run
 
